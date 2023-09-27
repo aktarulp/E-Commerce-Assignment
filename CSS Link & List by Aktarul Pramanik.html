@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>CSS Link & List by Aktar</title>
+<style>
+  a:link {
+    text-decoration: none;
+    color: red;
+  }
+  a:visited{
+    text-decoration:none;
+    color: green;
+  }
+   a:hover{
+    text-decoration:none;
+    color: hotpink;
+  }
+  a:active{
+    text-decoration:none;
+    color: blue;
+  }
+
+table, tr, td {
+  border: 2px solid green;
+  border-spacing: 0;
+  border-collapse: collapse;
+}
+tr, td, th {
+    border: 2px solid green;
+}
+.tb_title {
+  text-align: center;
+  font-family: 'Arial Narrow', Arial, sans-serif;
+  color: blue;
+  font-weight: bold;
+  background-color: aquamarine;
+}
+.sq_list {
+  list-style-type: disc;
+}
+.loro_list {
+  list-style-type: lower-roman;
+}
+.loal_list {
+  list-style-type: lower-alpha;
+}
+.am_list {
+  list-style-type: armenian;
+}
+.circle_list {
+  list-style-type: circle;
+}
+.image_list{
+  list-style-image: url('list_logo.png');
+}
+.multi_img {
+  list-style: decimal-leading-zero; list-style-position: inside;
+}
+h2 {
+  text-align: center;"
+}
+</style>
+</head>
+<body>
+  <h2>Different kinds of list style</h2>
+    <!--Creating Table-->
+  <table>
+    <tr class="tb_title">
+      <td>Default List</td>
+      <td>Square List</td>
+      <td>Lower Roman</td>
+      <td>Alpha List</td>
+    </tr>
+    <!-- ROW TWO START-->
+    <tr>
+      <td>
+        <ul>
+        <li>Linkedin</li>
+        <li>Facebook</li>
+        <li>Thread</li>
+        </ul>
+      </td>
+      <td>
+        <ul class="sq_list">
+        <li>Linkedin</li>
+        <li>Facebook</li>
+        <li>Thread</li>
+        </ul>
+      </td>
+      <td>
+        <ul class="loro_list">
+        <li>Linkedin</li>
+        <li>Facebook</li>
+        <li>Thread</li>
+        </ul>
+      </td>
+      <td>
+        <ul class="loal_list">
+        <li>Linkedin</li>
+        <li>Facebook</li>
+        <li>Thread</li>
+        </ul>
+      </td>
+    </tr>
+    <!--ROW THREE START HERE-->
+    <tr class="tb_title">
+      <td>American List</td>
+      <td>Circle List</td>
+      <td>Image List</td>
+      <td>Multi Style</td>
+    </tr>
+
+  <!-- ROW FOUR START-->
+  <tr>
+    <td>
+      <ul class="am_list">
+      <li>Linkedin</li>
+      <li>Facebook</li>
+      <li>Thread</li>
+      </ul>
+    </td>
+    <td>
+      <ul class="circle_list">
+      <li>Linkedin</li>
+      <li>Facebook</li>
+      <li>Thread</li>
+      </ul>
+    </td>
+    <td>
+      <ul class="image_list">
+      <li>Linkedin</li>
+      <li>Facebook</li>
+      <li>Thread</li>
+      </ul>
+    </td>
+    <td>
+      <ul class="multi_img">
+      <li>Linkedin</li>
+      <li>Facebook</li>
+      <li>Thread</li>
+      </ul>
+    </td>
+  </tr>
+</table>
+<h2>Follow me on <a href="https://facebook.com/aktarulp">Facbook</a></h2>
+</body>
+</html>

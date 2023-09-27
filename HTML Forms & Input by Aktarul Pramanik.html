@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Aktar's HTML Forms & Input </title>
+</head>
+<body>
+    <h3>Aktars HTML forms & Input Practice</h3>
+    <form action="#" id="gub-form">
+        <!--Creating Fieldset-->
+        <fieldset>
+            <legend>Personal Information</legend>
+        <label for="name">Full Name:</label> <br>
+        <input type="text" id ="name" value="Aktarul Pramanik"> <br>
+        <label for="Password">Password</label> <br>
+        <input type="password" id="password"> <br>
+        <label for="incomelvl">Your Income Lavel</label> <br>
+        <input type="range" value="30000" min="10000" max="1000000"  id="incomelvl"
+        oninput="this.nextElementSibling.value = this.value" step="1000">
+        <output>30000</output>
+        <label for="">Gender</label><br>
+        <input type="radio" id="male" name="Gender" value="Male">
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="Gender" value="Male">
+        <label for="female">Female</label><br>
+       <label for="Age">Age</label> <br>
+       <input type="number" id="age" value="18" min="18"><br>
+       <label for="address">Your Location</label><br>
+       <select  name="address" id="address">
+       <!-- Creating Option Group Here-->
+        <optgroup for="address"> Dhaka </optgroup>
+        <!-- Creating Option Group Dhaka Here-->
+        <optgroup label="Dhaka">
+          <option value="1">Dhaka North</option>
+          <option value="3">Dhaka South</option>
+          <option value="4">Keraniganj</option>
+          <option value="5">Savar</option>
+        </optgroup>
+        <!-- Creating Option Outside Dhaka Here-->
+        <optgroup label="Outside Dahak">
+          <option value="6">Barishal</option>
+          <option value="7">Chattogram</option>
+          <option value="8">Khulna</option>
+          <option value="9">Rajshahi</option>
+          <option value="10">Rangpur</option>
+          <option value="11">Mymensingh</option>
+          <option value="12">Sylhet</option>
+        </optgroup>
+      </select>
+    </fieldset>
+    <!--Fieldset End Here-->
+<br>
+    <fieldset>
+        <legend>Choose Subject <br></legend>
+<!---==========================================================--->
+    <input type="checkbox" id="CSE-421" name="CSE-421" value="CSE-421">
+    <label for="421"> CSE-421 </label><br>
+    <input type="checkbox" id="CSE-422" name="CSE-422" value="CSE-422">
+    <label for="421"> CSE-422 </label><br>
+    <input type="checkbox" id="CSE-423" name="CSE-423" value="CSE-423">
+    <label for="421"> CSE-423 </label><br>
+<!---==========================================================--->
+    </fieldset>
+    <br>
+    <center>
+        <input type="reset" value="Reset">
+    </center>
+    <br>
+    <center>
+        <input type="submit" value="Submit to GUB" >
+    </center>
+    </form>
+    <br>
+   <center>
+        <button aria-hidden="true"> Go to GUB WebSite for more information </button>
+    </center>
+</body>
+</html>
